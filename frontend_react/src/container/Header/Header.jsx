@@ -1,23 +1,23 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 import { AppWrap } from '../../wrapper';
-import { images } from '../../constants';
+
 
 import Typed from 'react-typed';
 
 import './Header.scss';
 
-const scaleVariants = {
-    whileInView: {
-        scale: [0, 1],
-        opacity: [0, 1],
-        transition: {
-            duration: 1,
-            ease: 'easeInOut',
-        },
-    },
-};
+// const scaleVariants = {
+//     whileInView: {
+//         scale: [0, 1],
+//         opacity: [0, 1],
+//         transition: {
+//             duration: 1,
+//             ease: 'easeInOut',
+//         },
+//     },
+// };
 
 const Header = () => {
 
