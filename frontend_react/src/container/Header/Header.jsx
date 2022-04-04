@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 
+import Typed from "react-typed";
+
 import './Header.scss';
 
 const scaleVariants = {
@@ -19,7 +21,6 @@ const scaleVariants = {
 
 const Header = () => {
 
-    const constraintsRef = useRef(null);
 
 
     return (
@@ -28,22 +29,27 @@ const Header = () => {
                 whileInView={{ x: [-100, 0], opacity: [0, 1] }}
                 transition={{ duration: 0.5 }}
                 className="app__header-info"
-                ref={constraintsRef}
 
             >
                 <div className="app__header-badge">
                     <div className="badge-cmp">
-                        <p>Ciao! Sono <span>Federico</span></p>
+                        <p>Hi! 👋</p>
                     </div>
+
+
 
                     <motion.div
                         className="tag-cmp"
                         transition={{ duration: 1 }}
                         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-                        drag
-                        dragConstraints={constraintsRef}
                     >
-                        <p className="p-text">Junior Full Stack Developer</p>
+                        <span>I am </span>
+                        <Typed
+                            strings={["Federico!", "Junior Full Stack Developer."]}
+                            typeSpeed={150}
+                            backSpeed={75}
+                            loop
+                        />
                     </motion.div>
 
                 </div>
