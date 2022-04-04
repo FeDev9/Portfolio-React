@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 
-import Typed from "react-typed";
+import Typed from 'react-typed';
 
 import './Header.scss';
 
