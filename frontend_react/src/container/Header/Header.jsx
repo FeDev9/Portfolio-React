@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { AppWrap } from '../../wrapper';
 
 
-import Typed from 'react-typed';
+import Typewriter from 'typewriter-effect';
 
 import './Header.scss';
 
@@ -43,12 +43,12 @@ const Header = () => {
                         transition={{ duration: 1 }}
                         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
                     >
-                        <span>I am </span>
-                        <Typed
-                            strings={["Federico!", "Junior Full Stack Developer."]}
-                            typeSpeed={150}
-                            backSpeed={75}
-                            loop
+                        <Typewriter
+                            options={{
+                                strings: ["I am Federico!", "I am Junior Full Stack Developer."],
+                                autoStart: true,
+                                loop: true,
+                            }}
                         />
                     </motion.div>
 
