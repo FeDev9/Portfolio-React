@@ -43,13 +43,17 @@ const Header = () => {
                         transition={{ duration: 1 }}
                         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
                     >
-                        <Typewriter
+                        <span className='i_am'>I am </span>
+
+                        <span> <Typewriter
+                            className='typing'
                             options={{
-                                strings: ["I am Federico!", "I am Junior Full Stack Developer."],
+                                strings: ["Federico!", "Junior Full Stack Developer.", "iOS Developer Student."],
                                 autoStart: true,
                                 loop: true,
                             }}
-                        />
+                        /></span>
+
                     </motion.div>
 
                 </div>

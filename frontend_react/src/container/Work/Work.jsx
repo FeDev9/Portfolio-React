@@ -23,7 +23,7 @@ const Work = () => {
     }, [])
 
 
-    const filters = ['Web App', 'React JS', 'PHP', 'Node.js', 'All'];
+    const filters = ['JavaScript', 'React JS', 'PHP', 'Node.js', 'All'];
 
 
     const handleWorkFilter = (item) => {
@@ -74,7 +74,7 @@ const Work = () => {
                                 transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
                                 className="app__work-hover app__flex"
                             >
-                                <a href={work.projectLink} target="_blank">
+                                <a href={work.projectLink} target="_blank" rel="noreferrer">
                                     <motion.div
                                         whileInView={{ scale: [0, 1] }}
                                         whileHover={{ scale: [1, 0.9] }}
@@ -84,7 +84,7 @@ const Work = () => {
                                         <AiFillEye />
                                     </motion.div>
                                 </a>
-                                <a href={work.codeLink} target="_blank">
+                                <a href={work.codeLink} target="_blank" rel="noreferrer">
                                     <motion.div
                                         whileInView={{ scale: [0, 1] }}
                                         whileHover={{ scale: [1, 0.9] }}

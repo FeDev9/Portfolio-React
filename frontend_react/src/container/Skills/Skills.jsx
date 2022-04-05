@@ -25,7 +25,7 @@ const Skills = () => {
 
     return (
         <>
-            <h2 className="head-text">Skills & Experiences</h2>
+            <h2 className="head-text">Skills <span>&</span> Experiences</h2>
 
             <div className="app__skills-container">
                 <motion.div className="app__skills-list">
@@ -34,7 +34,7 @@ const Skills = () => {
                             whileInView={{ opacity: [0, 1] }}
                             transition={{ duration: 0.5 }}
                             className="app__skills-item app__flex"
-                            key={skill.name + '..'}
+                            key={skill.name}
                         >
                             <div
                                 className="app__flex"
